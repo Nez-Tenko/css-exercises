@@ -1,0 +1,18 @@
+/*
+div p {
+  background-color:yellow;
+  color:red;
+  font-size:20px;
+  text-align:center;
+}
+*/
+/* Alternate approach for this specific html file */
+
+.container p { /* this will only apply to paragraphs that are descended from class container */
+  background-color:yellow;
+  color:red;
+  font-size:20px;
+  text-align:center;
+}
+
+

@@ -1,0 +1,19 @@
+.odd {
+  background-color: #fab1be;
+  font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#id1 {
+  color: rgb(63,49,247);
+  font-size:36px;
+}
+
+.cooler { /* class for 3rd element */
+  font-size:24px;
+}
+
+#id2 {
+  background-color:rgba(158,255,154,0.6);
+  font-style:bold;
+}
+
