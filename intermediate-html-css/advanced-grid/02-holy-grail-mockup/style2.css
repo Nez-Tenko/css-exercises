@@ -5,8 +5,6 @@
 
 .container {
   text-align: center;
-
-   
 }
 
 .container div {
@@ -19,22 +17,16 @@
 
 .header {
   background-color: #393f4d;
-  
- 
 }
+
 
 .menu ul,
 .menu li {
   font-size: 16px;
-  
-  
-  
 }
 
 .sidebar {
   background-color: #C50208;
-
-  
 }
 
 .sidebar .photo {
@@ -55,10 +47,7 @@
 
 .nav {
   background-color: #C50208;
-
-  
 }
-
 
 
 .nav ul li {
@@ -68,8 +57,6 @@
 
 .article {
   background-color: #bccbde;
-
-
 }
 
 .article p {
@@ -98,7 +85,6 @@
 
 .footer {
   background-color: #393f4d;
-
 }
 
 .footer p {
@@ -106,69 +92,64 @@
   font-weight: normal;
 }
 
-/* solution */
+/* SOLUTION */
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 4px; 
- 
-
+  gap: 4px;
 }
 
 .header {
   grid-column: 1 / 3;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  align-items: center;
 }
 
 .logo {
   justify-self: start;
 }
 
+.menu {
+  align-self: center;
+}
+
 .menu ul {
-  list-style: none;
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu ul,
+.menu li {
+  list-style-type: none;
 }
 
 .sidebar {
-  grid-column: 1 / 2;
   grid-row: 2 / 4;
+  display: grid;
   gap: 50px;
-  display:grid;
-  /*
-  justify-content:space-between;
-  */
-  align-items: stretch;
 }
 
-.sidebar > * {
-  display:grid;
+.side-content,
+.photo {
+  display: grid;
   align-items: center;
 }
 
-.nav {
-  grid-column: 2 / 3;
-}
-
-.nav > ul {
+.nav ul {
+  list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  list-style:none;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .article {
-  grid-column: 2/ 3;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
-.card {
-  height:200px;
-  
+.article .card {
+  height: 200px;
 }
 
 .card p {
@@ -178,7 +159,3 @@
 .footer {
   grid-column: 1 / 3;
 }
-
-
-
-
